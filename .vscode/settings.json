@@ -9,10 +9,10 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
 
-        "c": "cd $dir && gcc -I../lib -Wall $fileName `find $workspaceRoot \\( -iname '*.c' -not -name '$fileName' \\)` -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
+        "c": "cd $dir && gcc -I../lib -Wall $fileName `find $workspaceRoot \\( -iname '*.c' -not -name '$fileName' \\)` -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt && cd $workspaceRoot",
         //"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 
-        "cpp": "cd $dir && g++ -I../lib -std=c++17  -Wall $fileName `find $workspaceRoot \\( -iname '*.cpp' -not -name '$fileName' \\)` -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -I../lib -std=c++17  -Wall $fileName `find $workspaceRoot \\( -iname '*.cpp' -not -name '$fileName' \\)` -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt && cd $workspaceRoot",
         //"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
