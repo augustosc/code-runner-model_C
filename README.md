@@ -1,4 +1,5 @@
-# C Project Structure Using Make
+# C Project Structure Using Code Runner
+
 srcs
     |_app
     |   |_main.c
